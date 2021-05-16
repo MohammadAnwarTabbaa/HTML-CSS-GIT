@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>29 - Combined Skills - HTML, CSS and Git Exercises</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/week3-forms.css" />
-    <link rel="stylesheet" href="/css/combined-skills.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/week3-forms.css" rel="stylesheet" />
+    <link href="/css/combined-skills.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <div class="site-header__title">C.Y.F</div>
         <div class="main-nav">
           <ul class="main-nav__list">
@@ -31,13 +31,13 @@
           <label for="search-input">
             Search
           </label>
-          <input id="search-input" class="site-search__input" type="text" name="search" />
+          <input id="search-input" class="site-search__input" name="search" type="text" />
           <svg
-            aria-hidden="true"
-            data-prefix="fas"
-            data-icon="search"
             class="svg-inline--fa fa-search fa-w-16"
+            data-icon="search"
+            data-prefix="fas"
             role="img"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
@@ -48,22 +48,51 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
         <p>Send us an email if you would like to contact us.</p>
-        <form method="GET" class="contact-form">
+        <form class="contact-form" method="GET">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input id="name" name="name" type="text" required />
           </div>
           <div class="contact-form__field">
-            <textarea
-              name="message"
-              placeholder="Your message should not be longer than 200 words."
-            ></textarea>
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
           </div>
+          <div class="contact-form__field">
+            <label>
+              Message
+              <textarea
+                name="message"
+                placeholder="Your message should not be longer than 200 words."
+                required
+              ></textarea>
+            </label>
+          </div>
+          <fieldset>
+            <legend>What branch are you interested in?</legend>
+
+            <label>
+              <input name="branch" type="radio" value="london" />
+              London
+            </label>
+            <p></p>
+            <label>
+              <input name="branch" type="radio" value="glasgow" />
+              Glasgow
+            </label>
+            <p></p>
+
+            <label>
+              <input name="branch" type="radio" value="manchester" />
+              Manchester
+            </label>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </main>
@@ -74,15 +103,15 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="redheart">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg
-            aria-hidden="true"
-            data-prefix="fas"
-            data-icon="search"
             class="svg-inline--fa fa-search fa-w-16"
+            data-icon="search"
+            data-prefix="fas"
             role="img"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >

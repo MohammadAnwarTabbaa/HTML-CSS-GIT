@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>29 - Combined Skills - HTML, CSS and Git Exercises</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/combined-skills.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/combined-skills.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <h1 class="site-header__title">C.Y.F</h1>
         <div class="main-nav">
           <ul class="main-nav__list">
@@ -30,13 +30,13 @@
           <label for="search-input">
             Search
           </label>
-          <input id="search-input" class="site-search__input" type="text" name="search" />
+          <input id="search-input" class="site-search__input" name="search" type="text" />
           <svg
-            aria-hidden="true"
-            data-prefix="fas"
-            data-icon="search"
             class="svg-inline--fa fa-search fa-w-16"
+            data-icon="search"
+            data-prefix="fas"
             role="img"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
@@ -47,13 +47,14 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <div class="hero">
           <img class="hero__image" src="/images/29-hero.jpg" />
           <h2 class="hero__title">
-            Duis aute irure dolor in reprehenderit in voluptate velit
+            Duis aute irure dolor in <br />
+            reprehenderit in voluptate velit
           </h2>
           <p class="hero__author">By <span>Nostrud Fugiat</span></p>
           <p class="hero__time">
@@ -106,15 +107,15 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="redheart">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg
-            aria-hidden="true"
-            data-prefix="fas"
-            data-icon="search"
             class="svg-inline--fa fa-search fa-w-16"
+            data-icon="search"
+            data-prefix="fas"
             role="img"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
