@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>25 - T-Shirt Size - HTML, CSS and Git Exercises</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/week3-forms.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/week3-forms.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -29,7 +29,15 @@
                 </div>
               </td>
               <td>
-                Medium
+                <form>
+                  <label class="screenreader" for="size">Choose a size</label>
+
+                  <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </form>
               </td>
               <td>
                 1
