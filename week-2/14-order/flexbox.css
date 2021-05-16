@@ -3,3 +3,19 @@
 }
 
 /* Add your own CSS code below */
+ul.countries--first .country--brazil {
+  order: 5;
+}
+
+ul.countries--second .country--brazil {
+  order: 4;
+}
+
+ul.countries--second .country--uganda {
+  order: 5;
+}
+
+.countries--third {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
