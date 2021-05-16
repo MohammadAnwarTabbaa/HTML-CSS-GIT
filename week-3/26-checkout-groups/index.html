@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>26 - Checkout Groups - HTML, CSS and Git Exercises</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/week3-forms.css" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/week3-forms.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -36,8 +36,55 @@
 
         <div class="checkout">
           <h2 class="checkout__title">Checkout</h2>
-          <form method="GET" id="checkout-form" class="checkout__form">
+          <form id="checkout-form" class="checkout__form" method="GET">
             <!-- Add the form fields here -->
+            <fieldset>
+              <legend>Billing Address</legend>
+
+              <label>
+                Address Line 1
+                <input name="address1" type="text" />
+              </label>
+
+              <label>
+                Address Line 2
+                <input name="address2" type="text" />
+              </label>
+
+              <label>
+                Post card
+                <input name="postcard" type="text" />
+              </label>
+
+              <label>
+                City
+                <input name="city" type="text" />
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Delivery Address</legend>
+
+              <label>
+                Address Line 1
+                <input name="2-address1" type="text" />
+              </label>
+
+              <label>
+                Address Line 2
+                <input name="2-address2" type="text" />
+              </label>
+
+              <label>
+                Post card
+                <input name="2-postcard" type="text" />
+              </label>
+
+              <label>
+                City
+                <input name="2-city" type="text" />
+              </label>
+            </fieldset>
 
             <button type="submit">Complete Purchase</button>
           </form>
