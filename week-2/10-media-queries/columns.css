@@ -5,7 +5,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .countries {
+  head {
     columns: 3;
   }
 }
